@@ -10,6 +10,7 @@ type Props = {
 }
 
 const Card: FC<PropsWithChildren<Props>> = ({ title, children, imgSrc } ) => {
+
     return(
         <div className="card" style={{ width: "16rem" }}>
         { imgSrc && <img src={ imgSrc } className="card-img-top" alt="..." style={{ width: "13rem", alignSelf: "center" }} /> }
